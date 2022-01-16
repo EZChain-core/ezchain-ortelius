@@ -1,0 +1,34 @@
+{
+  "networkID": 5,
+  "logDirectory": "/var/log/ortelius",
+  "listenAddr": ":8080",
+  "features": [
+    "accumulate_balance_indexer",
+    "aggregate_cache",
+    "cchain_index"
+  ],
+  "avalanchego": "https://testnet-api.ezchain.com",
+  "nodeInstance": "default",
+  "cchainId": "2XNs8nmfB8HdDeHhf41yTd1KQ5md3PBsnz3mvFevtr3DzBAiib",
+  "chains": {
+    "11111111111111111111111111111111LpoYY": {
+      "id": "11111111111111111111111111111111LpoYY",
+      "avaxAssetID": "b6zVkwR9zwMPTE91WpWPcfiELp9SisLfxXRK8JJSE6NNJScAK",
+      "networkID": 5,
+      "vmType": "pvm"
+    },
+    "2DVxoCB9yUqmvbqCiRT6s7L2XEY4mcxicyJ6m4TN5oNsx6rbAK": {
+      "id": "2DVxoCB9yUqmvbqCiRT6s7L2XEY4mcxicyJ6m4TN5oNsx6rbAK",
+      "avaxAssetID": "b6zVkwR9zwMPTE91WpWPcfiELp9SisLfxXRK8JJSE6NNJScAK",
+      "networkID": 5,
+      "vmType": "avm"
+    }
+  },
+  "services": {
+    "db": {
+      "dsn": "root:password@tcp(mysql:3306)/ortelius",
+      "driver": "mysql"
+    }
+  }
+}
+
